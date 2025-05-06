@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday My Love!</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="canvas-container">
+        <canvas id="mainCanvas"></canvas>
+        <canvas id="particleCanvas"></canvas>
+    </div>
+
+    <div class="content-wrapper">
+        <div class="birthday-card">
+            <div class="header">
+                <h1 class="glitch-text" data-text="Happy Birthday My Love">Happy Birthday My Love</h1>
+                <div class="love-counter">
+                    <div class="counter-content">
+                        <span class="counter-label">Our Love Journey:</span>
+                        <div class="counter-details">
+                            <div class="counter-item">
+                                <span class="counter-value" id="days">0</span>
+                                <span class="counter-unit">Days</span>
+                            </div>
+                            <div class="counter-item">
+                                <span class="counter-value" id="hours">0</span>
+                                <span class="counter-unit">Hours</span>
+                            </div>
+                            <div class="counter-item">
+                                <span class="counter-value" id="minutes">0</span>
+                                <span class="counter-unit">Minutes</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="photo-showcase">
+                <div class="photo-container">
+                    <div class="photo-item active">
+                        <img src="images/photo1.jpg" alt="My Love">
+                        <div class="photo-caption">Our First Date</div>
+                    </div>
+                    <div class="photo-item">
+                        <img src="images/photo2.jpg" alt="My Love">
+                        <div class="photo-caption">Special Moments</div>
+                    </div>
+                    <div class="photo-item">
+                        <img src="images/photo3.jpg" alt="My Love">
+                        <div class="photo-caption">Together Forever</div>
+                    </div>
+                </div>
+                <div class="photo-controls">
+                    <button class="prev-btn">←</button>
+                    <button class="next-btn">→</button>
+                </div>
+            </div>
+
+            <div class="love-message">
+                <p class="typing-text">Every moment with you is a gift I cherish. Happy Birthday to the most amazing person in my life!</p>
+            </div>
+
+            <div class="interactive-elements">
+                <button class="special-message-btn">💝 Click for a Special Message 💝</button>
+                <div class="floating-hearts"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="loveModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>My Dearest Love</h2>
+            <div class="secret-message">
+                <p>Every day with you is a blessing. Your smile brightens my darkest days, and your love makes my life complete.</p>
+                <p>On your special day, I want you to know that you are the most beautiful soul I know. Your kindness, your warmth, and your love make every moment magical.</p>
+                <p>Happy Birthday to the one who makes my heart skip a beat every time I see you. I love you more than words can express! 💖</p>
+            </div>
+            <div class="heart-animation"></div>
+        </div>
+    </div>
+
+    <div class="music-player">
+        <button class="music-toggle">
+            <span class="music-icon">🎵</span>
+        </button>
+        <audio id="bgMusic" loop>
+            <source src="music/romantic-song.mp3" type="audio/mp3">
+        </audio>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
